@@ -1,0 +1,5 @@
+install helm v3
+
+helm repo add gitlab https://charts.gitlab.io
+put your token to values.yaml
+helm install gitlab-runner  gitlab/gitlab-runner -n cicd -f ./values.yaml
